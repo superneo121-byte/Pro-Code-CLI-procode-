@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pro-code-cli"
+version = "2.0.0"
+description = "Pro Code CLI: enterprise-grade terminal AI coding workspace for any OpenAI-compatible endpoint (Google AI Studio, OpenRouter, OpenAI, Anthropic proxy, DeepSeek, Groq, xAI, Ollama/LocalAI), with local GGUF inference, permission guardrails, git auto-bootstrap and device-storage file tools. v2 adds 50 A-Z enterprise features: AST chunking + local vector store, memory graph, cross-session memory, atomic multi-file transactions, AST rename, diff visualizer, import resolver, syntax auto-heal, hierarchical agent teams, self-healing test loops, channels, kanban board, per-agent budgets, LSP-style diagnostics/go-to-def/references/completion, PR creator, conflict resolver, history explainer, branch protection, stash context switcher, sandbox, secret scanning, SAST, signed audit trail, hybrid local/cloud routing, prompt cache, GGUF hub, hardware monitor, TUI panes/tree/tables/mouse, plugin ecosystem, themes, webhooks, notebooks, preview server, team templates, analytics dashboard, enterprise proxy, air-gap mode and a built-in self-test suite."
+readme = { text = "Pro Code CLI (`procode`): streaming terminal AI assistant with 230+ slash names, multi-provider support, local GGUF models (llama-cpp-python), OpenCode-style permission gates (strict|balanced|autonomous), provider fallback chains, background agent swarm, git worktree isolation, AST symbol patching, self-dev mode, subagents, task graphs, workspace indexing, code extraction — plus the v2.0 A-Z enterprise layer (context/memory, multi-file editing, agent swarms, LSP, git/PR, security, local AI, TUI, plugins, enterprise). Standard library only; optional gguf/crypto extras.", content-type = "text/markdown" }
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["cli", "ai", "llm", "gemini", "openai", "openrouter", "anthropic", "deepseek", "groq", "xai", "ollama", "gguf", "llama-cpp", "coding-assistant", "terminal", "lsp", "vector-store", "agent-swarm", "enterprise"]
+classifiers = [
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development",
+]
+dependencies = []
+
+[project.optional-dependencies]
+crypto = ["cryptography>=42"]
+gguf = ["llama-cpp-python>=0.2.70"]
+all = ["cryptography>=42", "llama-cpp-python>=0.2.70"]
+
+[project.scripts]
+procode = "procode:main"
+
+[tool.setuptools]
+py-modules = ["procode"]
