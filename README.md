@@ -44,49 +44,78 @@ Here is the exhaustive A-Z feature breakdown of everything packed into ProCode C
 
 ---
 
-## ðŸš€ Quick Start Guide
+## âš™ï¸ Complete Installation & Setup Guide
 
-### Prerequisites
-*   **Termux** (recommended for mobile Android environments) or any standard Linux/macOS/Windows terminal.
-*   **Python 3.10+**
+### 1. Prerequisites
+*   **Termux** (recommended for Android mobile development) or any standard Linux, macOS, or Windows terminal environment.
+*   **Python 3.10 or higher** installed on your system.
 
-### Installation & Setup
+### 2. Setting Up Termux (Android Mobile Environment)
+If you are running ProCode CLI on an Android device via Termux, run the following commands to set up your storage, update packages, and install Python:
 
-1. Clone or place your ProCode script (`procode_2.py`) into your workspace directory.
-2. Grant execution permissions and verify your environment:
+```bash
+# Setup phone storage access
+termux-setup-storage
+
+# Update package repositories
+pkg update && pkg upgrade -y
+
+# Install essential development packages (Python, Git, build tools)
+pkg install python git clang make libffi openssl -y
+
+# Upgrade pip to the latest version
+pip install --upgrade pip
+```
+
+### 3. Downloading and Preparing ProCode CLI
+1. Place your ProCode script file (`procode_2.py`) into your desired working directory (e.g., `~/projects/procode`).
+2. Navigate to the directory:
    ```bash
-   python3 procode_2.py --selftest
+   cd ~/projects/procode
    ```
-3. Launch the interactive CLI REPL:
+3. Make the script executable (optional, but convenient):
    ```bash
-   python3 procode_2.py
+   chmod +x procode_2.py
    ```
+
+### 4. Running System Diagnostics (`--selftest`)
+Before launching your interactive session, verify that all internal subsystems and Python dependencies are fully operational:
+```bash
+python3 procode_2.py --selftest
+```
+This runs an automated validation across 50+ internal modules, ensuring your environment is ready.
+
+### 5. Launching the Interactive REPL
+To start the ProCode CLI assistant:
+```bash
+python3 procode_2.py
+```
+*(Tip: You can set up a shell alias in your `.bashrc` or `.zshrc` for instant access: `alias agy="python3 /path/to/procode_2.py"`)*
 
 ---
 
-## ðŸ› ï¸ Core Commands Reference
+## ðŸš€ Core Commands Reference
 
-| Command / Flag | Description |
+| Command / Flag | Action / Description |
 | :--- | :--- |
-| `agy` / `pro-code-cli` | Launch the main interactive terminal agent. |
-| `/selftest` | Run complete system diagnostics and verify all 50+ subsystems. |
-| `/hwmon` | Display current CPU, memory, and thread utilization metrics. |
-| `/board` | Open or inspect the active project Kanban/Task board. |
-| `/index` | Trigger incremental codebase AST & vector store indexing. |
+| `agy` / `pro-code-cli` | Launch the main interactive terminal agent REPL. |
+| `/selftest` | Run complete system diagnostics and verify all internal subsystems. |
+| `/hwmon` | Display current CPU, thread utilization, and memory metrics. |
+| `/board` | Open or inspect the active project Kanban/Task tracking board. |
+| `/index` | Trigger incremental codebase AST parsing and vector store embedding. |
 | `/help` | Display available commands and interactive shortcuts inside the REPL. |
 
 ---
 
-## ðŸ“± Mobile Architecture (Termux)
+## ðŸ“± Mobile Architecture & Performance Best Practices
 
-ProCode is built from the ground up to respect mobile hardware boundaries:
-*   **Strict Thread Bounding**: `n_threads` is automatically capped ($\le 4$ by default on mobile) to prevent thermal throttling and CPU locking.
-*   **Atomic State Protection**: All configuration and state files use atomic rename writes (`.tmp` $
-ightarrow$ final) to protect against unexpected process kills or power drops.
-*   **Zero External Bloat**: No heavy native compilation requirements for core features, ensuring smooth execution right inside Android's restricted sandbox.
+*   **Strict Thread Bounding**: `n_threads` is automatically capped ($\le 4$ by default on mobile CPU setups) to prevent thermal throttling, excessive battery drain, and CPU locking.
+*   **Atomic State Protection**: All configuration files, memory graphs, and task boards use atomic temporary file renames (`.tmp` $
+ightarrow$ final) to eliminate data corruption if Termux is abruptly closed or OOM-killed.
+*   **Zero External Bloat**: The core engine requires zero external `pip` packages, allowing it to run smoothly even in heavily restricted sandbox environments.
 
 ---
 
 ## ðŸ“œ License & Contribution
 
-Maintained under personal development. Designed for high-performance mobile engineering, edge AI exploration, and autonomous terminal workflows.
+Maintained under personal development. Engineered for high-performance mobile engineering, edge AI exploration, and autonomous terminal workflows.
