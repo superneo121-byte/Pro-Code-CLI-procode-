@@ -1,5 +1,8 @@
 name: Unzip project
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
 permissions:
   contents: write
 jobs:
@@ -7,12 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Extract procode.zip into repo root
+      - name: Extract and push
         run: |
+          if [ ! -f procode.zip ]; then echo "no zip, nothing to do"; exit 0; fi
           unzip -o procode.zip
           rm procode.zip
-      - name: Commit and push
-        run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add -A
