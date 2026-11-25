@@ -1,0 +1,76 @@
+version: 2
+project_name: procode
+before:
+  hooks:
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w -X github.com/procode/procode/internal/version.Version={{.Version}}
+    main: ./main.go
+
+archives:
+  - format: tar.gz
+    name_template: >-
+      procode-
+      {{- if eq .Os "darwin" }}mac-
+      {{- else if eq .Os "windows" }}windows-
+      {{- else if eq .Os "linux" }}linux-{{end}}
+      {{- if eq .Arch "amd64" }}x86_64
+      {{- else if eq .Arch "#86" }}i386
+      {{- else }}{{ .Arch }}{{ end }}
+      {{- if .Arm }}v{{ .Arm }}{{ end }}
+    format_overrides:
+      - goos: windows
+        format: zip
+checksum:
+  name_template: "checksums.txt"
+snapshot:
+  name_template: "0.0.0-{{ .Timestamp }}"
+aurs:
+  - name: procode
+    homepage: "https://github.com/procode/procode"
+    description: "terminal based agent that can build anything"
+    maintainers:
+      - "Procode Maintainers"
+    license: "MIT"
+    private_key: "{{ .Env.AUR_KEY }}"
+    git_url: "ssh://aur@aur.archlinux.org/procode-bin.git"
+    provides:
+      - procode
+    conflicts:
+      - procode
+    package: |-
+      install -Dm755 ./procode "${pkgdir}/usr/bin/procode"
+brews:
+  - repository:
+      owner: procode
+      name: homebrew-tap
+nfpms:
+  - maintainer: procode
+    description: terminal based agent that can build anything
+    formats:
+      - deb
+      - rpm
+    file_name_template: >-
+      {{ .ProjectName }}-
+      {{- if eq .Os "darwin" }}mac
+      {{- else }}{{ .Os }}{{ end }}-{{ .Arch }}
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^doc:"
+      - "^test:"
+      - "^ci:"
+      - "^ignore:"
+      - "^example:"
+      - "^wip:"
