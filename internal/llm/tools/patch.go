@@ -87,6 +87,9 @@ func (p *patchTool) Info() ToolInfo {
 }
 
 func (p *patchTool) Run(ctx context.Context, call ToolCall) (ToolResponse, error) {
+	if IsPlanMode() {
+		return NewTextErrorResponse(planModeRefusal), nil
+	}
 	var params PatchParams
 	if err := json.Unmarshal([]byte(call.Input), &params); err != nil {
 		return NewTextErrorResponse("invalid parameters"), nil

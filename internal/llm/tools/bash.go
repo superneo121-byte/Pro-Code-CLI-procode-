@@ -228,6 +228,9 @@ func (b *bashTool) Info() ToolInfo {
 }
 
 func (b *bashTool) Run(ctx context.Context, call ToolCall) (ToolResponse, error) {
+	if IsPlanMode() {
+		return NewTextErrorResponse(planModeRefusal), nil
+	}
 	var params BashParams
 	if err := json.Unmarshal([]byte(call.Input), &params); err != nil {
 		return NewTextErrorResponse("invalid parameters"), nil

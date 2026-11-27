@@ -122,6 +122,9 @@ func (e *editTool) Info() ToolInfo {
 }
 
 func (e *editTool) Run(ctx context.Context, call ToolCall) (ToolResponse, error) {
+	if IsPlanMode() {
+		return NewTextErrorResponse(planModeRefusal), nil
+	}
 	var params EditParams
 	if err := json.Unmarshal([]byte(call.Input), &params); err != nil {
 		return NewTextErrorResponse("invalid parameters"), nil

@@ -39,6 +39,13 @@ Procode is a Go-based CLI application that brings AI assistance to your terminal
 - **External Editor Support**: Open your preferred editor for composing messages
 - **Named Arguments for Custom Commands**: Create powerful custom commands with multiple named placeholders
 
+### Procode additions
+
+- **Latest models**: Claude Fable/Opus/Sonnet/Haiku 5.x, GPT 6.x (Astra, Sol, Terra, Luna) and Gemini 3.x are in the model picker (`Ctrl+O`).
+- **Plan / Build modes**: press `Ctrl+K` and choose *Toggle Plan Mode* for a read-only mode where the agent cannot edit files or run commands.
+- **More themes**: `nord`, `solarized` and `rosepine` join the existing themes (`Ctrl+T`).
+- **Self-update**: run `procode upgrade` to install the newest GitHub release.
+
 ## Installation
 
 ### Using the Install Script

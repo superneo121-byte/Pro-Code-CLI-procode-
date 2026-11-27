@@ -11,6 +11,7 @@ import (
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/app"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/agent"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/permission"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/pubsub"
@@ -949,6 +950,17 @@ If there are Cursor rules (in .cursor/rules/ or .cursorrules) or Copilot rules (
 			return func() tea.Msg {
 				return startCompactSessionMsg{}
 			}
+		},
+	})
+	model.RegisterCommand(dialog.Command{
+		ID:          "plan",
+		Title:       "Toggle Plan Mode",
+		Description: "Switch between plan mode (read-only, no edits or commands) and build mode",
+		Handler: func(cmd dialog.Command) tea.Cmd {
+			if tools.TogglePlanMode() {
+				return util.ReportInfo("Plan mode ON: read-only, no file edits or commands")
+			}
+			return util.ReportInfo("Build mode ON: edits and commands allowed")
 		},
 	})
 	// Load custom commands

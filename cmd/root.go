@@ -9,6 +9,7 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	zone "github.com/lrstanley/bubblezone"
+	"github.com/spf13/cobra"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/app"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/db"
@@ -18,7 +19,6 @@ import (
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/pubsub"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/version"
-	"github.com/spf13/cobra"
 )
 
 var rootCmd = &cobra.Command{

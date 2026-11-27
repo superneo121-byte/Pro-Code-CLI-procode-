@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
 )
 
 func TestGetContextFromPaths(t *testing.T) {

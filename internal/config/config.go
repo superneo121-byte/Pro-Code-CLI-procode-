@@ -10,9 +10,9 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/spf13/viper"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
 	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
-	"github.com/spf13/viper"
 )
 
 // MCPType defines the type of MCP (Model Control Protocol) server.
