@@ -24,3 +24,6 @@ func TogglePlanMode() bool {
 const planModeRefusal = "Plan mode is ON: this tool is disabled because it would change files or run commands. " +
 	"Only read/search tools are available. Explain your plan to the user instead, and tell them to run the " +
 	"\"Toggle Plan Mode\" command (Ctrl+K) to switch to build mode before making changes."
+
+// PlanModeRefusal is the message returned by tools that are blocked in plan mode.
+const PlanModeRefusal = planModeRefusal

@@ -87,3 +87,15 @@ func TestThemeRegistration(t *testing.T) {
 	// Switch back to original theme
 	_ = SetTheme(originalTheme)
 }
+
+func TestExtraThemesRegistered(t *testing.T) {
+	available := map[string]bool{}
+	for _, name := range AvailableThemes() {
+		available[name] = true
+	}
+	for _, name := range []string{"nord", "solarized", "rosepine"} {
+		if !available[name] {
+			t.Errorf("theme %q is not registered", name)
+		}
+	}
+}

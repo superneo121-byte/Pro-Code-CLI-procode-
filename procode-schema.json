@@ -88,7 +88,21 @@
             "copilot.o3-mini",
             "copilot.o4-mini",
             "copilot.gemini-2.0-flash",
-            "copilot.gemini-2.5-pro"
+            "copilot.gemini-2.5-pro",
+            "copilot.gpt-3.5-turbo",
+            "copilot.gpt-4",
+            "copilot.claude-3.7-sonnet-thought",
+            "claude-fable-5.2",
+            "claude-opus-5.5",
+            "claude-sonnet-5.5",
+            "claude-haiku-5.5",
+            "gpt-6.2-astra",
+            "gpt-6.2-sol",
+            "gpt-6.1-terra",
+            "gpt-6-luna",
+            "gemini-3.5-flash",
+            "gemini-3.1-flash-lite",
+            "gemini-3.1-pro-preview"
           ],
           "type": "string"
         },
@@ -198,7 +212,21 @@
               "copilot.o3-mini",
               "copilot.o4-mini",
               "copilot.gemini-2.0-flash",
-              "copilot.gemini-2.5-pro"
+              "copilot.gemini-2.5-pro",
+              "copilot.gpt-3.5-turbo",
+              "copilot.gpt-4",
+              "copilot.claude-3.7-sonnet-thought",
+              "claude-fable-5.2",
+              "claude-opus-5.5",
+              "claude-sonnet-5.5",
+              "claude-haiku-5.5",
+              "gpt-6.2-astra",
+              "gpt-6.2-sol",
+              "gpt-6.1-terra",
+              "gpt-6-luna",
+              "gemini-3.5-flash",
+              "gemini-3.1-flash-lite",
+              "gemini-3.1-pro-preview"
             ],
             "type": "string"
           },
@@ -408,7 +436,10 @@
             "monokai",
             "onedark",
             "tokyonight",
-            "tron"
+            "tron",
+            "nord",
+            "rosepine",
+            "solarized"
           ],
           "type": "string"
         }
