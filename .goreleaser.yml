@@ -33,27 +33,8 @@ checksum:
   name_template: "checksums.txt"
 snapshot:
   name_template: "0.0.0-{{ .Timestamp }}"
-aurs:
-  - name: procode
-    homepage: "https://github.com/superneo121-byte/Pro-Code-CLI-procode-"
-    description: "terminal based agent that can build anything"
-    maintainers:
-      - "Procode Maintainers"
-    license: "MIT"
-    private_key: "{{ .Env.AUR_KEY }}"
-    git_url: "ssh://aur@aur.archlinux.org/procode-bin.git"
-    provides:
-      - procode
-    conflicts:
-      - procode
-    package: |-
-      install -Dm755 ./procode "${pkgdir}/usr/bin/procode"
-brews:
-  - repository:
-      owner: procode
-      name: homebrew-tap
 nfpms:
-  - maintainer: procode
+  - maintainer: superneo121-byte
     description: terminal based agent that can build anything
     formats:
       - deb

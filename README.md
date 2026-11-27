@@ -45,26 +45,10 @@ Procode is a Go-based CLI application that brings AI assistance to your terminal
 
 ```bash
 # Install the latest version
-curl -fsSL https://raw.githubusercontent.com/procode/procode/refs/heads/main/install | bash
+curl -fsSL https://raw.githubusercontent.com/superneo121-byte/Pro-Code-CLI-procode-/refs/heads/main/install | bash
 
 # Install a specific version
-curl -fsSL https://raw.githubusercontent.com/procode/procode/refs/heads/main/install | VERSION=0.1.0 bash
-```
-
-### Using Homebrew (macOS and Linux)
-
-```bash
-brew install superneo121-byte/tap/procode
-```
-
-### Using AUR (Arch Linux)
-
-```bash
-# Using yay
-yay -S procode-bin
-
-# Using paru
-paru -S procode-bin
+curl -fsSL https://raw.githubusercontent.com/superneo121-byte/Pro-Code-CLI-procode-/refs/heads/main/install | VERSION=0.1.0 bash
 ```
 
 ### Using Go
