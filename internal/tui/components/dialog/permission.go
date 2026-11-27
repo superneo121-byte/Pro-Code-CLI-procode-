@@ -8,13 +8,13 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/procode/procode/internal/diff"
-	"github.com/procode/procode/internal/llm/tools"
-	"github.com/procode/procode/internal/permission"
-	"github.com/procode/procode/internal/tui/layout"
-	"github.com/procode/procode/internal/tui/styles"
-	"github.com/procode/procode/internal/tui/theme"
-	"github.com/procode/procode/internal/tui/util"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/diff"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/permission"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/layout"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/styles"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/util"
 )
 
 type PermissionAction string

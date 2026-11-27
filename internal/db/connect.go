@@ -9,8 +9,8 @@ import (
 	_ "github.com/ncruces/go-sqlite3/driver"
 	_ "github.com/ncruces/go-sqlite3/embed"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
 
 	"github.com/pressly/goose/v3"
 )

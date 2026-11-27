@@ -1,4 +1,4 @@
-module github.com/procode/procode
+module github.com/superneo121-byte/Pro-Code-CLI-procode-
 
 go 1.24.0
 

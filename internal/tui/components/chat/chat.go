@@ -6,12 +6,12 @@ import (
 
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/x/ansi"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/message"
-	"github.com/procode/procode/internal/session"
-	"github.com/procode/procode/internal/tui/styles"
-	"github.com/procode/procode/internal/tui/theme"
-	"github.com/procode/procode/internal/version"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/session"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/styles"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/version"
 )
 
 type SendMsg struct {
@@ -120,7 +120,7 @@ func logo(width int) string {
 }
 
 func repo(width int) string {
-	repo := "https://github.com/procode/procode"
+	repo := "https://github.com/superneo121-byte/Pro-Code-CLI-procode-"
 	t := theme.CurrentTheme()
 
 	return styles.BaseStyle().

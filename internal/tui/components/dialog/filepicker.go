@@ -14,14 +14,14 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/procode/procode/internal/app"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/message"
-	"github.com/procode/procode/internal/tui/image"
-	"github.com/procode/procode/internal/tui/styles"
-	"github.com/procode/procode/internal/tui/theme"
-	"github.com/procode/procode/internal/tui/util"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/app"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/image"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/styles"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/util"
 )
 
 const (

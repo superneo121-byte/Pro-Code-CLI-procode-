@@ -4,7 +4,7 @@ import (
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/procode/procode/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
 )
 
 type SplitPaneLayout interface {

@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/procode/procode/internal/db"
-	"github.com/procode/procode/internal/llm/models"
-	"github.com/procode/procode/internal/pubsub"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/db"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/pubsub"
 )
 
 type CreateMessageParams struct {

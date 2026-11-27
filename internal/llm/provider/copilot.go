@@ -13,11 +13,11 @@ import (
 	"github.com/openai/openai-go"
 	"github.com/openai/openai-go/option"
 	"github.com/openai/openai-go/shared"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/llm/models"
-	toolsPkg "github.com/procode/procode/internal/llm/tools"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
+	toolsPkg "github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
 )
 
 type copilotOptions struct {

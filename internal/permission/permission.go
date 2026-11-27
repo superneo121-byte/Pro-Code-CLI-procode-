@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	"github.com/google/uuid"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/pubsub"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/pubsub"
 )
 
 var ErrorPermissionDenied = errors.New("permission denied")

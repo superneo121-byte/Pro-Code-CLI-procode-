@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/procode/procode/internal/lsp"
-	"github.com/procode/procode/internal/lsp/protocol"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp/protocol"
 )
 
 type DiagnosticsParams struct {

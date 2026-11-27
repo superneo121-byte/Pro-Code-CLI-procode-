@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	"github.com/alecthomas/chroma/v2/styles"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
 )
 
 // Manager handles theme registration, selection, and retrieval.

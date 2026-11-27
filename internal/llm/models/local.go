@@ -10,7 +10,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/procode/procode/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
 	"github.com/spf13/viper"
 )
 

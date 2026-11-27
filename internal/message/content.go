@@ -5,7 +5,7 @@ import (
 	"slices"
 	"time"
 
-	"github.com/procode/procode/internal/llm/models"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
 )
 
 type MessageRole string

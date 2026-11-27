@@ -10,14 +10,14 @@ import (
 
 	"github.com/charmbracelet/lipgloss"
 	"github.com/charmbracelet/x/ansi"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/diff"
-	"github.com/procode/procode/internal/llm/agent"
-	"github.com/procode/procode/internal/llm/models"
-	"github.com/procode/procode/internal/llm/tools"
-	"github.com/procode/procode/internal/message"
-	"github.com/procode/procode/internal/tui/styles"
-	"github.com/procode/procode/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/diff"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/agent"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/styles"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
 )
 
 type uiMessageType int

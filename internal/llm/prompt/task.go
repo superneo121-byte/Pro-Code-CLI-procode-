@@ -3,7 +3,7 @@ package prompt
 import (
 	"fmt"
 
-	"github.com/procode/procode/internal/llm/models"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
 )
 
 func TaskPrompt(_ models.ModelProvider) string {

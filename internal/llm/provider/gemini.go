@@ -10,10 +10,10 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/llm/tools"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
 	"google.golang.org/genai"
 )
 

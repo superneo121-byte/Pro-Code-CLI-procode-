@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/procode/procode/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -4,7 +4,7 @@ import (
 	"github.com/charmbracelet/glamour"
 	"github.com/charmbracelet/glamour/ansi"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/procode/procode/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
 )
 
 const defaultMargin = 1

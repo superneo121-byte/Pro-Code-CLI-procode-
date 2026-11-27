@@ -11,8 +11,8 @@ import (
 
 	md "github.com/JohannesKaufmann/html-to-markdown"
 	"github.com/PuerkitoBio/goquery"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/permission"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/permission"
 )
 
 type FetchParams struct {

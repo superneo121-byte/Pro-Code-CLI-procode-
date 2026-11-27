@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/procode/procode/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
 	"google.golang.org/genai"
 )
 

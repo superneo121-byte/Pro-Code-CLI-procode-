@@ -1,6 +1,6 @@
 package prompt
 
-import "github.com/procode/procode/internal/llm/models"
+import "github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
 
 func SummarizerPrompt(_ models.ModelProvider) string {
 	return `You are a helpful AI assistant tasked with summarizing conversations.

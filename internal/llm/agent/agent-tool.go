@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/llm/tools"
-	"github.com/procode/procode/internal/lsp"
-	"github.com/procode/procode/internal/message"
-	"github.com/procode/procode/internal/session"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/session"
 )
 
 type agentTool struct {

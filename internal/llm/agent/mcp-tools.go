@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/llm/tools"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/permission"
-	"github.com/procode/procode/internal/version"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/permission"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/version"
 
 	"github.com/mark3labs/mcp-go/client"
 	"github.com/mark3labs/mcp-go/mcp"

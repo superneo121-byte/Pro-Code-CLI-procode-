@@ -11,10 +11,10 @@ import (
 
 	"github.com/bmatcuk/doublestar/v4"
 	"github.com/fsnotify/fsnotify"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/lsp"
-	"github.com/procode/procode/internal/lsp/protocol"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp/protocol"
 )
 
 // WorkspaceWatcher manages LSP file watching

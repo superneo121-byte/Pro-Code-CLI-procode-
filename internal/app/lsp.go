@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/lsp"
-	"github.com/procode/procode/internal/lsp/watcher"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp/watcher"
 )
 
 func (app *App) initLSPClients(ctx context.Context) {

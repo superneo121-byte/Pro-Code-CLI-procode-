@@ -5,12 +5,12 @@ import (
 	"github.com/charmbracelet/bubbles/textarea"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/procode/procode/internal/logging"
-	utilComponents "github.com/procode/procode/internal/tui/components/util"
-	"github.com/procode/procode/internal/tui/layout"
-	"github.com/procode/procode/internal/tui/styles"
-	"github.com/procode/procode/internal/tui/theme"
-	"github.com/procode/procode/internal/tui/util"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	utilComponents "github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/components/util"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/layout"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/styles"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/util"
 )
 
 type CompletionItem struct {

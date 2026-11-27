@@ -8,12 +8,12 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/diff"
-	"github.com/procode/procode/internal/history"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/lsp"
-	"github.com/procode/procode/internal/permission"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/diff"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/history"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/permission"
 )
 
 type PatchParams struct {

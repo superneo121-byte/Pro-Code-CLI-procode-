@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/procode/procode/internal/db"
-	"github.com/procode/procode/internal/pubsub"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/db"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/pubsub"
 )
 
 const (

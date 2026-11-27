@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/lsp"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp"
 )
 
 type ViewParams struct {

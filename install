@@ -40,7 +40,7 @@ INSTALL_DIR=$HOME/.procode/bin
 mkdir -p "$INSTALL_DIR"
 
 if [ -z "$requested_version" ]; then
-    url="https://github.com/procode/procode/releases/latest/download/$filename"
+    url="https://github.com/superneo121-byte/Pro-Code-CLI-procode-/releases/latest/download/$filename"
     specific_version=$(curl -s https://api.github.com/repos/procode/procode/releases/latest | awk -F'"' '/"tag_name": "/ {gsub(/^v/, "", $4); print $4}')
 
     if [[ $? -ne 0 ]]; then
@@ -48,7 +48,7 @@ if [ -z "$requested_version" ]; then
         exit 1
     fi
 else
-    url="https://github.com/procode/procode/releases/download/v${requested_version}/$filename"
+    url="https://github.com/superneo121-byte/Pro-Code-CLI-procode-/releases/download/v${requested_version}/$filename"
     specific_version=$requested_version
 fi
 

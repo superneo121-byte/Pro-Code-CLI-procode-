@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/procode/procode/internal/llm/tools"
-	"github.com/procode/procode/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
 )
 
 type bedrockOptions struct {

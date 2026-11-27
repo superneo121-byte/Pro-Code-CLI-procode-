@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/llm/models"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
 )
 
 // JSONSchemaType represents a JSON Schema type

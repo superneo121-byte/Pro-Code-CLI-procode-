@@ -7,16 +7,16 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/llm/models"
-	"github.com/procode/procode/internal/lsp"
-	"github.com/procode/procode/internal/lsp/protocol"
-	"github.com/procode/procode/internal/pubsub"
-	"github.com/procode/procode/internal/session"
-	"github.com/procode/procode/internal/tui/components/chat"
-	"github.com/procode/procode/internal/tui/styles"
-	"github.com/procode/procode/internal/tui/theme"
-	"github.com/procode/procode/internal/tui/util"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp/protocol"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/pubsub"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/session"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/components/chat"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/styles"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/util"
 )
 
 type StatusCmp interface {

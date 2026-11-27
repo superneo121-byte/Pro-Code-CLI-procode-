@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/llm/tools/shell"
-	"github.com/procode/procode/internal/permission"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools/shell"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/permission"
 )
 
 type BashParams struct {

@@ -8,13 +8,13 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/diff"
-	"github.com/procode/procode/internal/history"
-	"github.com/procode/procode/internal/pubsub"
-	"github.com/procode/procode/internal/session"
-	"github.com/procode/procode/internal/tui/styles"
-	"github.com/procode/procode/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/diff"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/history"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/pubsub"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/session"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/styles"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
 )
 
 type sidebarCmp struct {

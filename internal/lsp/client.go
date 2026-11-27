@@ -14,9 +14,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/lsp/protocol"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp/protocol"
 )
 
 type Client struct {

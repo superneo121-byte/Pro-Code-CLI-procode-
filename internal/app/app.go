@@ -9,17 +9,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/db"
-	"github.com/procode/procode/internal/format"
-	"github.com/procode/procode/internal/history"
-	"github.com/procode/procode/internal/llm/agent"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/lsp"
-	"github.com/procode/procode/internal/message"
-	"github.com/procode/procode/internal/permission"
-	"github.com/procode/procode/internal/session"
-	"github.com/procode/procode/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/db"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/format"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/history"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/agent"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/permission"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/session"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
 )
 
 type App struct {

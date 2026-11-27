@@ -12,7 +12,7 @@ builds:
       - amd64
       - arm64
     ldflags:
-      - -s -w -X github.com/procode/procode/internal/version.Version={{.Version}}
+      - -s -w -X github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/version.Version={{.Version}}
     main: ./main.go
 
 archives:
@@ -35,7 +35,7 @@ snapshot:
   name_template: "0.0.0-{{ .Timestamp }}"
 aurs:
   - name: procode
-    homepage: "https://github.com/procode/procode"
+    homepage: "https://github.com/superneo121-byte/Pro-Code-CLI-procode-"
     description: "terminal based agent that can build anything"
     maintainers:
       - "Procode Maintainers"

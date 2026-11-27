@@ -4,7 +4,7 @@ package lsp
 import (
 	"context"
 
-	"github.com/procode/procode/internal/lsp/protocol"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp/protocol"
 )
 
 // Implementation sends a textDocument/implementation request to the LSP server.

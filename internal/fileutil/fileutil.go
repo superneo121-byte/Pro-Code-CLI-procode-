@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/bmatcuk/doublestar/v4"
-	"github.com/procode/procode/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
 )
 
 var (

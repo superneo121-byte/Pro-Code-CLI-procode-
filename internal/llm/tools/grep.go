@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/fileutil"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/fileutil"
 )
 
 type GrepParams struct {

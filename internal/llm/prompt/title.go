@@ -1,6 +1,6 @@
 package prompt
 
-import "github.com/procode/procode/internal/llm/models"
+import "github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
 
 func TitlePrompt(_ models.ModelProvider) string {
 	return `you will generate a short title based on the first message a user begins a conversation with

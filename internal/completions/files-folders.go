@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 
 	"github.com/lithammer/fuzzysearch/fuzzy"
-	"github.com/procode/procode/internal/fileutil"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/tui/components/dialog"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/fileutil"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/components/dialog"
 )
 
 type filesAndFoldersContextGroup struct {

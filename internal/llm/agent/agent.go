@@ -8,16 +8,16 @@ import (
 	"sync"
 	"time"
 
-	"github.com/procode/procode/internal/config"
-	"github.com/procode/procode/internal/llm/models"
-	"github.com/procode/procode/internal/llm/prompt"
-	"github.com/procode/procode/internal/llm/provider"
-	"github.com/procode/procode/internal/llm/tools"
-	"github.com/procode/procode/internal/logging"
-	"github.com/procode/procode/internal/message"
-	"github.com/procode/procode/internal/permission"
-	"github.com/procode/procode/internal/pubsub"
-	"github.com/procode/procode/internal/session"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/config"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/prompt"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/provider"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/logging"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/permission"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/pubsub"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/session"
 )
 
 // Common errors

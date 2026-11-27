@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/procode/procode/internal/lsp/protocol"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/lsp/protocol"
 )
 
 func applyTextEdits(uri protocol.DocumentUri, edits []protocol.TextEdit) error {

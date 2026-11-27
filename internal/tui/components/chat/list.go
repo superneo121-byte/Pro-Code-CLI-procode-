@@ -10,14 +10,14 @@ import (
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/procode/procode/internal/app"
-	"github.com/procode/procode/internal/message"
-	"github.com/procode/procode/internal/pubsub"
-	"github.com/procode/procode/internal/session"
-	"github.com/procode/procode/internal/tui/components/dialog"
-	"github.com/procode/procode/internal/tui/styles"
-	"github.com/procode/procode/internal/tui/theme"
-	"github.com/procode/procode/internal/tui/util"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/app"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/pubsub"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/session"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/components/dialog"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/styles"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/theme"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/tui/util"
 )
 
 type cacheItem struct {

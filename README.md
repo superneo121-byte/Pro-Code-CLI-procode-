@@ -54,7 +54,7 @@ curl -fsSL https://raw.githubusercontent.com/procode/procode/refs/heads/main/ins
 ### Using Homebrew (macOS and Linux)
 
 ```bash
-brew install procode/tap/procode
+brew install superneo121-byte/tap/procode
 ```
 
 ### Using AUR (Arch Linux)
@@ -70,7 +70,7 @@ paru -S procode-bin
 ### Using Go
 
 ```bash
-go install github.com/procode/procode@latest
+go install github.com/superneo121-byte/Pro-Code-CLI-procode-@latest
 ```
 
 ## Configuration
@@ -664,7 +664,7 @@ You can also configure a self-hosted model in the configuration file under the `
 
 ```bash
 # Clone the repository
-git clone https://github.com/procode/procode.git
+git clone https://github.com/superneo121-byte/Pro-Code-CLI-procode-.git
 cd procode
 
 # Build

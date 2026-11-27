@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/procode/procode/internal/llm/models"
-	"github.com/procode/procode/internal/llm/tools"
-	"github.com/procode/procode/internal/message"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/models"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/llm/tools"
+	"github.com/superneo121-byte/Pro-Code-CLI-procode-/internal/message"
 )
 
 type EventType string
